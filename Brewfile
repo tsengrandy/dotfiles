@@ -52,7 +52,8 @@ brew 'wget' # Wget
 brew 'yamllint' # YAML linter
 brew 'zsh' # Zsh
 brew 'powerlevel10k' # Powerlevel10k
-brew 'ngrok/ngrok/ngrok' # ngrok
+
+cask 'ngrok' # requires for Auth0 login
 
 # Fonts
 cask 'font-3270-nerd-font'

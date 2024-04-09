@@ -1,0 +1,53 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ROOT_DIR=$SCRIPT_DIR/..
+
+IFS=""
+
+# List of files to symlink
+FILES=(
+  ".aliases"
+  ".eslintrc.json"
+  ".exports"
+  ".gitconfig"
+  ".gitignore_global"
+  ".gruvbox.dircolors"
+  ".htoprc"
+  ".inputrc"
+  ".irbrc"
+  ".local"
+  ".macos"
+  ".npmrc"
+  ".pryrc"
+  ".tmux-osx.conf"
+  ".tmux.conf"
+  ".tmuxinator"
+  ".tool-versions"
+  ".vim"
+  ".vimrc"
+  ".vimrc.bundles"
+  ".vimrc_background"
+  ".yamllint"
+  ".zsh_custom"
+  ".zshrc"
+  "Brewfile"
+  # VSCode
+  "Library/Application Support/Code/User/snippets"
+  "Library/Application Support/Code/User/argv.json"
+  "Library/Application Support/Code/User/keybindings.json"
+  "Library/Application Support/Code/User/settings.json"
+)
+
+# Link files
+link() {
+  echo "Linking $1"
+  rm -rf $HOME/$1
+  ln -s $ROOT_DIR/$1 $HOME/$1
+}
+
+# Link all the files
+for i in "${FILES[@]}"
+do
+  link "$i"
+done

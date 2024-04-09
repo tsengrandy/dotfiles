@@ -1,0 +1,13 @@
+.tmux/plugins/*
+.vim/plugin/*
+!.vim/plugin/.gitkeep
+.vim/bundle/*
+!.vim/bundle/.gitkeep
+.vim/undodir/*
+!.vim/undodir/.gitkeep
+.vim/.netrwhist
+!.vim/view/.gitkeep
+.vim/view/*
+zsh/.oh-my-zsh
+.netrwhist
+.ruby-lsp

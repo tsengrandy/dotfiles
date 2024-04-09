@@ -1,0 +1,16 @@
+*~
+.DS_Store
+*.swp
+*.iml
+/_local
+
+node_modules/*
+
+.root
+.notags
+
+.orig
+
+.vscode
+.webpack
+.kube

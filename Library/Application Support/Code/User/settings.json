@@ -1,0 +1,274 @@
+{
+  "editor.cursorStyle": "block",
+  "peacock.favoriteColors": [
+    {
+      "name": "Gruvbox Dark - Red",
+      "value": "#cc241d"
+    },
+    {
+      "name": "Gruvbox Dark - Green",
+      "value": "#98971a"
+    },
+    {
+      "name": "Gruvbox Dark - Yellow",
+      "value": "#d79921"
+    },
+    {
+      "name": "Gruvbox Dark - Blue",
+      "value": "#458588"
+    },
+    {
+      "name": "Gruvbox Dark - Purple",
+      "value": "#b16286"
+    },
+    {
+      "name": "Gruvbox Dark - Aqua",
+      "value": "#689d6a"
+    },
+    {
+      "name": "Gruvbox Dark - Orange",
+      "value": "#d65d0e"
+    }
+  ],
+  "editor.rulers": [
+    {
+      "column": 100,
+      "color": "#452505"
+    }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.prettier": "explicit"
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "telemetry.telemetryLevel": "off",
+  "files.trimTrailingWhitespace": true,
+  "javascript.preferences.quoteStyle": "single",
+  "dash.languageIdToDocsetMap": {
+    "typescript": [
+      "angular",
+      "typescript",
+      "javascript",
+      "lodash",
+      "awsjs"
+    ]
+  },
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    ".vimrc.bundles": "viml",
+    "config": "shellscript",
+    "*.erb": "erb"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "auto-close-tag.SublimeText3Mode": true,
+  "markdown.preview.breaks": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "files.insertFinalNewline": true,
+  "workbench.list.horizontalScrolling": true,
+  "workbench.tree.indent": 16,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabSizing": "shrink",
+  "zenMode.hideLineNumbers": false,
+  "window.menuBarVisibility": "toggle",
+  "debug.inlineValues": "on",
+  "debug.toolBarLocation": "docked",
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "terminal.explorerKind": "external",
+  "terminal.external.linuxExec": "tilix",
+  "extensions.ignoreRecommendations": false,
+  "peacock.surpriseMeFromFavoritesOnly": true,
+  "editor.suggestSelection": "first",
+  "python.jediEnabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "testExplorer.addToEditorContextMenu": true,
+  "testExplorer.onStart": "retire",
+  "testExplorer.showOnRun": true,
+  "cSpell.userWords": [
+    "Arns",
+    "Bibimbap",
+    "Cognito",
+    "Gochujang",
+    "Interop",
+    "Kubernetes",
+    "Mutex",
+    "Nerdery",
+    "Onica",
+    "Rollbar",
+    "Rubocop",
+    "Terraform's",
+    "acmcert",
+    "amazonaws",
+    "amazoncognito",
+    "awscli",
+    "bootcamp",
+    "buildspec",
+    "butterrobot",
+    "cfront",
+    "chipotle",
+    "ciphertext",
+    "cloudformation",
+    "cloudwatch",
+    "codebuild",
+    "codepipeline",
+    "cors",
+    "creds",
+    "crhelper",
+    "decodable",
+    "devtool",
+    "distributionid",
+    "distro",
+    "dynamodb",
+    "envvars",
+    "gmail",
+    "kustomization",
+    "kustomize",
+    "lsremote",
+    "memoized",
+    "middlewares",
+    "mkdtemp",
+    "mktemp",
+    "mockdev",
+    "mystaticsite",
+    "noqa",
+    "npmrc",
+    "oauth",
+    "olduri",
+    "onicagroup",
+    "openid",
+    "pexpect",
+    "pipenv",
+    "platcorp",
+    "popd",
+    "precommit",
+    "pushd",
+    "pylint",
+    "quotemark",
+    "readonly",
+    "rearchitecting",
+    "recurse",
+    "serializer",
+    "shaneallensmith",
+    "signin",
+    "slsw",
+    "ssmith",
+    "staticsite",
+    "stepfunctions",
+    "thisisfine",
+    "titlecase",
+    "tslib",
+    "unmarshall",
+    "verifiedpermissions",
+    "voodooGQ",
+    "whichenv",
+    "yamllint"
+  ],
+  "explorer.openEditors.visible": 5,
+  "explorer.autoReveal": false,
+  "yaml.customTags": [
+    "!And",
+    "!If",
+    "!Not",
+    "!Equals",
+    "!Or",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Join sequence",
+    "!And sequence",
+    "!If sequence",
+    "!Not sequence",
+    "!Equals sequence",
+    "!Or sequence",
+    "!FindInMap",
+    "!Join",
+    "!Sub sequence",
+    "!ImportValue sequence",
+    "!Split sequence",
+    "!vault"
+  ],
+  "yaml.format.enable": true,
+  "diffEditor.renderSideBySide": false,
+  "python.linting.pylintUseMinimalCheckers": false,
+  "smartsemicolon.autoLineChange": false,
+  "debug.node.autoAttach": "on",
+  "editor.tabSize": 2,
+  "editor.autoClosingOvertype": "always",
+  "python.languageServer": "Microsoft",
+  "material-icon-theme.showWelcomeMessage": false,
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop",
+  "python.showStartPage": false,
+  "tabnine.experimentalAutoImports": true, // use rubocop for formatting
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "liveshare.authenticationProvider": "GitHub",
+  "ansible.validate.executablePath": "ansible-lint", // use rubocop for formatting
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "support.class.builtin.js", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "storage.type.function.js", // function keyword
+          "storage.type.js", // Variable declarations
+          "keyword.control.import.js", // Imports
+          "keyword.control.from.js", // From-Keyword
+          //"entity.name.type.js", // new … Expression
+          "keyword.control.flow.js", // await
+          "keyword.control.conditional.js", // if
+          "keyword.control.loop.js", // for
+          "keyword.operator.new.js", // new
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "workbench.editor.tabActionLocation": "left",
+  "javascript.suggest.completeJSDocs": false,
+  "typescript.suggest.completeJSDocs": false,
+  "git.openRepositoryInParentFolders": "never",
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.vimrc.enable": true,
+  "redhat.telemetry.enabled": false,
+  "application.shellEnvironmentResolutionTimeout": 25,
+  "workbench.colorTheme": "Dark Purple Flat",
+  "workbench.iconTheme": "material-icon-theme",
+}

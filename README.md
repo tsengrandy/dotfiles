@@ -4,8 +4,9 @@
 Mac OS configuration files
 
 ```shell
-git clone git@github.com/voodooGQ/dotfiles.git ~/Code/github.com/voodooGQ/dotfiles
-cd ~/Code/github.com/voodooGQ
+git clone git@github.com:pixelhandler/dotfiles.git ~/Code/pixelhandler/pixelhandler
+cd ~/Code/pixelhandler/dotfiles
+git checkout kajabi
 ./bin/init
 # After Oh My ZSH install
 ./bin/install
@@ -44,6 +45,15 @@ We'll then [`clone`](#clone) all system and project level repositories to the sy
 The [`.macos`](#macos) file is then sourced to set any registry level configurations for the system.
 
 Finally, a cron is configured that will allow us to continuely sync notes back up to the repository that contains them.
+
+#### `.local/bin/.secrets`
+
+Add your github API credentials as needed,
+
+```
+GITHUB_TOKEN=ghp_XX
+HOMEBREW_GITHUB_API_TOKEN=ghp_XX
+```
 
 ### `link`
 

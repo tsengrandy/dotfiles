@@ -10,6 +10,7 @@ tap 'stripe/stripe-cli'
 tap 'ynqa/tap'
 
 # Core
+brew 'the_silver_searcher' # the silver searcher
 brew 'argocd' # ArgoCD
 brew 'asdf' # Version manager
 brew 'awscli' # AWS CLI
@@ -50,6 +51,8 @@ brew 'vault' # Vault
 brew 'wget' # Wget
 brew 'yamllint' # YAML linter
 brew 'zsh' # Zsh
+brew 'powerlevel10k' # Powerlevel10k
+brew 'ngrok/ngrok/ngrok' # ngrok
 
 # Fonts
 cask 'font-3270-nerd-font'
@@ -124,10 +127,10 @@ cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless alr
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
 # mas 'iBar-Menubar icon control tool', id: '-2146090692' # Menubar icon control
-mas 'Boop', id: 1518425043 # Various developer tools
-mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
-mas 'ColorSlurp', id: 1287239339 # Color picker
-mas 'Magnet', id: 441258766 # Window manager
+# mas 'Boop', id: 1518425043 # Various developer tools
+# mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
+# mas 'ColorSlurp', id: 1287239339 # Color picker
+# mas 'Magnet', id: 441258766 # Window manager
 
 # VSCode extensions
 vscode 'hashicorp.terraform' # Terraform

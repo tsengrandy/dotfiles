@@ -1,3 +1,4 @@
 #!/bin/zsh
 
-fpath=(/usr/local/share/zsh/site-functions $fpath)
+# TODO figure out what directory /user/local/share may not be correct
+# fpath=(/usr/local/share/zsh/site-functions $fpath)

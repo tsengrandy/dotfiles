@@ -1,4 +1,6 @@
 plugins=(
+  1password
+  bundler
   colored-man-pages
   colorize
   docker
@@ -17,6 +19,7 @@ plugins=(
   python
   postgres
   rake
+  rails
   rbenv
   ruby
   sudo
@@ -26,6 +29,7 @@ plugins=(
   vundle
   zsh-asdf-prompt
   1password
+  z
   zsh-256color
   zsh-asdf-direnv
   zsh-ask

@@ -1,0 +1,4 @@
+name: dp
+root: ~/Code/Kajabi/developer-platform
+windows:
+  - editor: code .

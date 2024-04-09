@@ -4,7 +4,7 @@
 Mac OS configuration files
 
 ```shell
-git clone git@github.com:pixelhandler/dotfiles.git ~/Code/pixelhandler/pixelhandler
+git clone git@github.com:pixelhandler/dotfiles.git ~/Code/pixelhandler/dotfiles
 cd ~/Code/pixelhandler/dotfiles
 git checkout kajabi
 ./bin/init
@@ -30,7 +30,7 @@ This is the initial script that should be ran upon download. It will check to se
 
 ### `install`
 
-The `install` script goes through and does any type of installation/configuration needed to get the system up to par. 
+The `install` script goes through and does any type of installation/configuration needed to get the system up to par.
 
 First, we verify if `xcode` is installed, since this is a general requirement for a lot of libraries. If it's found already it will ignore, otherwise it will isntall.
 
@@ -46,14 +46,15 @@ The [`.macos`](#macos) file is then sourced to set any registry level configurat
 
 Finally, a cron is configured that will allow us to continuely sync notes back up to the repository that contains them.
 
-#### `.local/bin/.secrets`
+#### `~/.secrets`
 
-Add your github API credentials as needed,
+Create the file in your $HOME directory and add your github API credentials as needed.
 
 ```
 GITHUB_TOKEN=ghp_XX
-HOMEBREW_GITHUB_API_TOKEN=ghp_XX
 ```
+
+* Run `source ~/.secrets` before you install
 
 ### `link`
 
@@ -75,7 +76,7 @@ The `.zshrc` is the main configuration file for the ZSH shell. This is a pretty 
 
 #### `.zsh` dir
 
-The `.zsh` dir contains custom support files for ZSH. 
+The `.zsh` dir contains custom support files for ZSH.
 
 ##### `.zsh/.path`
 
@@ -88,3 +89,22 @@ Additional plugins for zsh are added via the `.plugins` file
 ### `.macos`
 
 The `.macos` file contains registry overrides for a Macintosh computer. Allowing to make automated configurations to the base level system
+
+## Customize
+
+In the case you already have a `dotfiles` repo
+
+```shell
+git clone git@github.com:pixelhandler/dotfiles.git ~/Code/pixelhandler/dotfiles
+cd ~/Code/pixelhandler/dotfiles
+git checkout kajabi
+cd ~/Code
+git clone git@github.com:<your-github-user>/dotfiles.git ~/Code/<your-github-user>/dotfiles
+cd ~/Code/<your-github-user>/dotfiles
+git switch --orphan kajabi
+cp -ap ~/Code/pixelhandler/dotfiles .
+# Edit files and customize to your taste, commit and push to your repo
+./bin/init
+# After Oh My ZSH install
+./bin/install
+```

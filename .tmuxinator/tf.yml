@@ -1,4 +1,4 @@
 name: tf
-root: ~/Code/github.com/Kajabi/terraform
+root: ~/Code/Kajabi/terraform
 windows:
   - editor: code .

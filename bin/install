@@ -3,7 +3,6 @@ set -e
 
 # Local directory variables
 BIN=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-ROOT=$BIN/..
 
 echo "Installing..."
 
@@ -33,8 +32,8 @@ fi
 brew update
 
 # Brew install
-chmod a+x $ROOT/brew
-source $ROOT/brew
+chmod a+x $BIN/brew
+source $BIN/brew
 
 # ASDF Dir Env
 asdf plugin-add direnv
@@ -54,6 +53,3 @@ $BIN/clone
 
 # Set macOS preferences
 source ~/.macos
-
-# Setup Cron
-crontab -l | { cat; echo "0 */1 * * * /Users/$USER/.local/bin/notes_sync"; } | crontab -

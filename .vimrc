@@ -68,7 +68,7 @@ set matchtime=2
 " When joining lines, delete spaces
 set nojoinspaces
 " Shell
-set shell=/usr/local/bin/zsh
+" set shell=/usr/local/bin/zsh
 " Automatically strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
 " Resize splits when vim itself is resized

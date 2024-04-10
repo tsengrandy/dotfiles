@@ -33,4 +33,6 @@ plugins=(
   zsh-256color
   zsh-asdf-direnv
   zsh-ask
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )

@@ -1,29 +1,69 @@
-alias :q="exit" # Exit the shell ala Vim
-alias :so="source ~/.zshrc" # Source the Zsh Config
-alias be="bundle exec" # Run a command with Bundler
+alias reload='source ~/.zshrc' # Source the Zsh Config
+# alias edit='code ~/.zshrc'
+alias edit='rubymine ~/.zshrc'
+alias c='clear'
+alias gcm='git checkout main'
+alias ip='curl icanhazip.com'
+alias gs='git status'
+alias gpush='git push'
+alias gpull='git pull'
+alias gl='git lg'
+alias gmm='git merge main'
+alias gc='git checkout'
+alias gaa='git add .'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+# Jenya's vesion of gbdall, keeping in case
+# alias gbdall='git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D'
+alias gbdall='git branch --merged | egrep -v "(^\*|main)" | xargs git branch -D'
+alias gbdALL='git branch | grep -v "main" | xargs git branch -D'
+alias gcom='git commit -m'
+alias gac='git add . && git commit -m'
+alias stash='git stash'
+alias pop='git stash pop'
+alias gcam='git commit --amend -m'
+alias undo='git reset --soft HEAD~1'
+alias fr='git fetch && git rebase origin/main'
+alias test='bundle exec rspec'
+alias ytest='yarn test:path'
+alias rs='bundle exec rails s'
+alias rc='bundle exec rails c'
+alias be='bundle exec' # Run a command with Bundler
+alias bi='(bundle check || bundle install)'
+alias seed='bundle exec rake db:seed'
+alias clearcache='bundle exec rake webpacker:clobber && yarn cache clean && yarn refresh'
+# alias dbm='f() { bin/rails db:migrate RAILS_ENV=$1 };f'
+alias dbm="bundle exec rails db:migrate"
+alias dbr="bundle exec rails db:rollback"
+alias dbs='rails db:migrate:status'
+alias yi="yarn install --check-files"
+alias kjupdate="bi && dbm && git restore db/structure.sql && yi"
+alias sidekiq='bundle exec sidekiq -C ./config/sidekiq_combined.yml'
+# alias ngrok="cd ~ && ./ngrok http --host-header=www.kajabi.test --auth='kajabi:foobar123' 3000"
+alias rcprod='kjctl console --debug'
+alias dn='DEPENDENCIES_NEXT=1'
+alias webpack='NODE_OPTIONS="--max-old-space-size=8192" bin/webpack-dev-server'
+alias webpackbuild='NODE_OPTIONS="--max-old-space-size=8192" bin/webpack'
+alias vite='bundle exec bin/vite dev'
+alias mailcatcher='rbenv shell 2.5.9 && mailcatcher -v -f'
+
+# Shoryuken
+alias kj:shoryuken='bin/payment_service_shoryuken'
+alias ps:shoryuken='bin/payment_service_shoryuken'
+
+# Webhook listeners
+alias kj:webhooks='stripe listen --forward-to localhost:3000/stripe_events'
+alias ps:webhooks='stripe listen --forward-to localhost:3001/kajabi_payments/stripe_webhooks'
+
+
+# Running workers
+alias kj:workers="echo 'Running Kajabi-Products sidekiq' && SIDEKIQ_COMBINED_CONCURRENCY=1 be sidekiq -C ./config/sidekiq_combined.yml"
+
+#From old dotfiles repo
 alias cat="PAGER=none bat" # No pager, run bat
-alias code="code --extensions-dir $HOME/.vscode/extensions --user-data-dir $HOME/Library/Application\ Support/Code/User"
 alias cp='cp -i' # Prompt before overwriting
-alias extip="dig +short myip.opendns.com @resolver1.opendns.com" # Get External IP
-alias fd='find . -type d -name' # Find Directories
-alias ff='find . -type f -name' # Find Files
-alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'" # Get Password from JSON
-alias gitup="git push --set-upstream origin" # Push to Origin
-alias grep='grep --color' # Colorize grep
-alias help='man' # Man pages
-alias hub="gh" # GitHub CLI instead of hub
-alias json="jnv" # JSON Viewer
-alias la="ls -A" # List All
-alias ldot='ls -ld .*' # List Dot Files
-alias ll="ls -la" # List Long
-alias ls="eza --long --header --git" # Enhanced ls
-alias mkdir='mkdir -p' # Make Directories along path
 alias mux='tmuxinator' # Tmuxinator
 alias mv='mv -i' # Prompt before overwriting
 alias port="sudo lsof -i" # See pids for a port running
-alias qe="kjctl service-request quality-engineering" # Create a ticket for QE
 alias rm='rm -i' # Prompt before removing
-alias tf="terraform" # Terraform
-alias tg="terragrunt" # Terragrunt
-alias top="htop" # use htop instead of top
 alias vscode="code" # VS Code

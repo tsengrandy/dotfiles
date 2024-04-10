@@ -4,8 +4,8 @@
 Mac OS configuration files
 
 ```shell
-git clone git@github.com:pixelhandler/dotfiles.git ~/Code/pixelhandler/dotfiles
-cd ~/Code/pixelhandler/dotfiles
+git clone git@github.com:tsengrandy/dotfiles.git ~/Code/tsengrandy/dotfiles
+cd ~/Code/tsengrandy/dotfiles
 git checkout kajabi
 ./bin/init
 # After Oh My ZSH install
@@ -95,14 +95,14 @@ The `.macos` file contains registry overrides for a Macintosh computer. Allowing
 In the case you already have a `dotfiles` repo
 
 ```shell
-git clone git@github.com:pixelhandler/dotfiles.git ~/Code/pixelhandler/dotfiles
-cd ~/Code/pixelhandler/dotfiles
+git clone git@github.com:tsengrandy/dotfiles.git ~/Code/tsengrandy/dotfiles
+cd ~/Code/tsengrandy/dotfiles
 git checkout kajabi
 cd ~/Code
 git clone git@github.com:<your-github-user>/dotfiles.git ~/Code/<your-github-user>/dotfiles
 cd ~/Code/<your-github-user>/dotfiles
 git switch --orphan kajabi
-cp -ap ~/Code/pixelhandler/dotfiles .
+cp -ap ~/Code/tsengrandy/dotfiles .
 # Edit files and customize to your taste, commit and push to your repo
 ./bin/init
 # After Oh My ZSH install

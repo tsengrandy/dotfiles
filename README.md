@@ -46,10 +46,10 @@ Finally, a cron is configured that will allow us to continuely sync notes back u
 
 #### `~/.secrets`
 
-Create the file in your $HOME directory and add your github API credentials as needed.
+Create the file in your root directory and add your github API credentials as needed.
 
 ```
-GITHUB_TOKEN=ghp_XX
+export GITHUB_TOKEN=ghp_XX
 ```
 
 * Run `source ~/.secrets` before you install

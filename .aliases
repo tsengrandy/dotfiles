@@ -62,7 +62,6 @@ alias kj:workers="echo 'Running Kajabi-Products sidekiq' && SIDEKIQ_COMBINED_CON
 #From old dotfiles repo
 alias cat="PAGER=none bat" # No pager, run bat
 alias cp='cp -i' # Prompt before overwriting
-alias mux='tmuxinator' # Tmuxinator
 alias mv='mv -i' # Prompt before overwriting
 alias port="sudo lsof -i" # See pids for a port running
 alias rm='rm -i' # Prompt before removing

@@ -1,4 +1,3 @@
-.tmux/plugins/*
 .vim/plugin/*
 !.vim/plugin/.gitkeep
 .vim/bundle/*

@@ -36,8 +36,6 @@ First, we verify if `xcode` is installed, since this is a general requirement fo
 
 Next, we will check if Homebrew exists, and install/update if not. Then it will run the [`brew`](#brew) script to install all packages.
 
-ASDF Dir Env is next, allowing us to automagically install project level `.tool-version` files for ASDF
-
 CA certs are then installed in the `$HOME/.certs` folder for use with browsers and other api level calls.
 
 We'll then [`clone`](#clone) all system and project level repositories to the system.

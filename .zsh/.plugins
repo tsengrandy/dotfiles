@@ -23,16 +23,8 @@ plugins=(
   rbenv
   ruby
   sudo
-  tmux
-  tmuxinator
   vi-mode
   vundle
-  zsh-asdf-prompt
   1password
   z
-  zsh-256color
-  zsh-asdf-direnv
-  zsh-ask
-  zsh-syntax-highlighting
-  zsh-autosuggestions
 )

@@ -11,13 +11,11 @@ tap 'ynqa/tap'
 
 # Core
 brew 'the_silver_searcher' # the silver searcher
-brew 'asdf' # Version manager
 brew 'awscli' # AWS CLI
 brew 'bat' # Cat with wings
 brew 'coreutils' # macOS are outdated
 brew 'curl' # Curl
 brew 'diff-so-fancy' # Better diff
-brew 'direnv' # Environment switcher
 brew 'eza' # Ls with colors
 brew 'gh' # Github CLI
 brew 'git' # Git
@@ -35,16 +33,12 @@ brew 'mcfly' # Better history
 brew 'minikube' # Minikube
 brew 'mkcert' # Local SSL
 brew 'nss' # NSS
-brew 'overmind' # Procfile manager
 brew 'postgresql@12', restart_service: true # PG 12
 brew 'python' # Python
-brew 'reattach-to-user-namespace' # Tmux copy paste
 brew 'redis', restart_service: true # Redis
 brew 'ripgrep' # Ripgrep
 brew 'ripgrep-all' # Ripgrep all
 brew 'tfenv' # Terraform version manager
-brew 'tmux' # Tmux
-brew 'tmuxinator' # Tmux profiles
 brew 'vault' # Vault
 brew 'wget' # Wget
 brew 'yamllint' # YAML linter
@@ -127,11 +121,14 @@ cask 'dbeaver-community' # DBeaver
 cask 'marvin' # Amazing Marvin
 cask 'postman' # Postman
 cask 'logi-options-plus' # Logitech Options for MX mouse
+cask 'cold-turkey-blocker' # Cold Turkey
+cask 'rescuetime' # RescueTime
 
 # Mac Apple Store
 mas 'Boop', id: 1518425043 # Various developer tools
 mas 'Magnet', id: 441258766 # Window manager
 mas 'Spark', id: 1176895641 # Email manager
+mas 'Hidden Bar', id: 1452453066 # Hidden menu bar
 
 # VSCode extensions (I don't use VSCode currently)
 # vscode 'hashicorp.terraform' # Terraform
@@ -152,7 +149,6 @@ mas 'Spark', id: 1176895641 # Email manager
 # vscode 'ivhernandez.vscode-plist' # PList Editor
 # vscode 'johnpapa.vscode-peacock' # Peacock
 # vscode 'ms-azuretools.vscode-docker' # Docker
-# vscode 'nguyenngoclong.asdf' # ASDF
 # vscode 'sharashchandradesai.simple-scratch' # Scratch Pads
 # vscode 'solomonkinard.git-blame' # Git Blame
 # vscode 'vortizhe.simple-ruby-erb' # Ruby ERB

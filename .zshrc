@@ -13,3 +13,5 @@ source $LOCAL_BIN/fpath_init
 eval "$(mcfly init zsh)"
 source $LOCAL_BIN/pnpm_init
 source $LOCAL_BIN/p10k/load
+export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
+source /opt/homebrew/opt/asdf/libexec/asdf.sh

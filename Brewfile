@@ -115,7 +115,6 @@ cask 'visual-studio-code' # VSCode
 cask 'rubymine' # Rubymine
 cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless already installed
 cask 'maccy' # Clipboard manager
-cask 'alfred' # Alfred search
 cask 'notion' # Notion
 cask 'dbeaver-community' # DBeaver
 cask 'marvin' # Amazing Marvin
@@ -126,6 +125,7 @@ cask 'rescuetime' # RescueTime
 cask 'notunes' # NoTunes https://github.com/tombonez/noTunes
 cask 'charmstone' # App manager
 cask 'karabiner-elements' # Keyboard manager + Hyperkey
+cask 'raycast' #spotlight replacement
 
 # Mac Apple Store
 mas 'Boop', id: 1518425043 # Various developer tools

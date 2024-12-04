@@ -124,8 +124,8 @@ cask 'logi-options-plus' # Logitech Options for MX mouse
 cask 'cold-turkey-blocker' # Cold Turkey
 cask 'rescuetime' # RescueTime
 cask 'notunes' # NoTunes https://github.com/tombonez/noTunes
-cask 'hyperkey' # Hyperkey shortcut key
 cask 'charmstone' # App manager
+cask 'karabiner-elements' # Keyboard manager + Hyperkey
 
 # Mac Apple Store
 mas 'Boop', id: 1518425043 # Various developer tools
